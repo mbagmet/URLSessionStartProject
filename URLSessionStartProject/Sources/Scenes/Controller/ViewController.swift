@@ -34,8 +34,6 @@ class ViewController: UIViewController {
         
         endpointClient.executeRequest(endpoint, completion: completion)
     }
-
-
 }
 
 final class GetNameEndpoint: ObjectResponseEndpoint<String> {
@@ -51,16 +49,6 @@ final class GetNameEndpoint: ObjectResponseEndpoint<String> {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
 
 func decodeJSONOld() {
     let str = """
@@ -79,4 +67,3 @@ func decodeJSONOld() {
         print("Failed to load: \(error.localizedDescription)")
     }
 }
-
