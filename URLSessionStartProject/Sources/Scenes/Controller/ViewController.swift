@@ -35,35 +35,3 @@ class ViewController: UIViewController {
         endpointClient.executeRequest(endpoint, completion: completion)
     }
 }
-
-final class GetNameEndpoint: ObjectResponseEndpoint<String> {
-    
-    override var method: RESTClient.RequestType { return .get }
-    override var path: String { "/v1/cards" }
-//    override var queryItems: [URLQueryItem(name: "id", value: "1")]?
-    
-    override init() {
-        super.init()
-
-        queryItems = [URLQueryItem(name: "name", value: "Black Lotus")]
-    }
-    
-}
-
-func decodeJSONOld() {
-    let str = """
-        {\"team\": [\"ios\", \"android\", \"backend\"]}
-    """
-    
-    let data = Data(str.utf8)
-
-    do {
-        if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-            if let names = json["team"] as? [String] {
-                print(names)
-            }
-        }
-    } catch let error as NSError {
-        print("Failed to load: \(error.localizedDescription)")
-    }
-}
