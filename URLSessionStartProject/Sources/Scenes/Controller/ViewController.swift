@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import CryptoKit
 
 class ViewController: UIViewController {
 
     private let endpointClient = EndpointClient(applicationSettings: ApplicationSettingsService())
+    private let cardsPrinter = CardsPrinter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +20,14 @@ class ViewController: UIViewController {
     }
     
     func executeCall() {
-        let endpoint = GetNameEndpoint()
-        let completion: EndpointClient.ObjectEndpointCompletion<String> = { result, response in
+        let endpoint = GetNameEndpoint(cardNames: ["Opt", "Black Lotus"])
+        let completion: EndpointClient.ObjectEndpointCompletion<Cards> = { result, response in
             guard let responseUnwrapped = response else { return }
 
             print("\n\n response = \(responseUnwrapped.allHeaderFields) ;\n \(responseUnwrapped.statusCode) \n")
             switch result {
-            case .success(let team):
-                print("team = \(team)")
-                
+            case .success(let success):
+                print("\(self.cardsPrinter.printCard(cards: success.cards))")
             case .failure(let error):
                 print(error)
             }
