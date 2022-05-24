@@ -20,6 +20,10 @@
 		8FE4B9202754A0A8005B617D /* EndpointClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B91F2754A0A8005B617D /* EndpointClient.swift */; };
 		8FE4B9222754A0EF005B617D /* EndpointClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B9212754A0EF005B617D /* EndpointClientError.swift */; };
 		8FE4B9242754A118005B617D /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B9232754A118005B617D /* ServerError.swift */; };
+		D9889880283C2ED7005CB9F9 /* String+ExtensionMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D988987F283C2ED7005CB9F9 /* String+ExtensionMD5.swift */; };
+		D9889883283C3852005CB9F9 /* Date+ExtensionTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889882283C3852005CB9F9 /* Date+ExtensionTimestamp.swift */; };
+		D9889885283C3F76005CB9F9 /* GetNameEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889884283C3F76005CB9F9 /* GetNameEndpoint.swift */; };
+		D9889888283C3FAD005CB9F9 /* decodeJSONOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889887283C3FAD005CB9F9 /* decodeJSONOld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		8FE4B91F2754A0A8005B617D /* EndpointClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointClient.swift; sourceTree = "<group>"; };
 		8FE4B9212754A0EF005B617D /* EndpointClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointClientError.swift; sourceTree = "<group>"; };
 		8FE4B9232754A118005B617D /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		D988987F283C2ED7005CB9F9 /* String+ExtensionMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionMD5.swift"; sourceTree = "<group>"; };
+		D9889882283C3852005CB9F9 /* Date+ExtensionTimestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionTimestamp.swift"; sourceTree = "<group>"; };
+		D9889884283C3F76005CB9F9 /* GetNameEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNameEndpoint.swift; sourceTree = "<group>"; };
+		D9889887283C3FAD005CB9F9 /* decodeJSONOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decodeJSONOld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		D9889878283C288E005CB9F9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D988987F283C2ED7005CB9F9 /* String+ExtensionMD5.swift */,
+				D9889882283C3852005CB9F9 /* Date+ExtensionTimestamp.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,8 +166,18 @@
 			isa = PBXGroup;
 			children = (
 				8F7518E927549D62001F05F2 /* ViewController.swift */,
+				D9889886283C3F7D005CB9F9 /* Helpers */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9889886283C3F7D005CB9F9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D9889884283C3F76005CB9F9 /* GetNameEndpoint.swift */,
+				D9889887283C3FAD005CB9F9 /* decodeJSONOld.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,14 +252,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7518EA27549D62001F05F2 /* ViewController.swift in Sources */,
+				D9889888283C3FAD005CB9F9 /* decodeJSONOld.swift in Sources */,
 				8F7518E627549D62001F05F2 /* AppDelegate.swift in Sources */,
 				8FE4B91E2754A080005B617D /* RESTClient.swift in Sources */,
+				D9889880283C2ED7005CB9F9 /* String+ExtensionMD5.swift in Sources */,
 				8FE4B9222754A0EF005B617D /* EndpointClientError.swift in Sources */,
 				8F7518E827549D62001F05F2 /* SceneDelegate.swift in Sources */,
+				D9889883283C3852005CB9F9 /* Date+ExtensionTimestamp.swift in Sources */,
 				8FE4B9242754A118005B617D /* ServerError.swift in Sources */,
 				8FE4B91A2754A009005B617D /* AppSettings.swift in Sources */,
 				8FE4B91C2754A059005B617D /* Endpoint.swift in Sources */,
 				8FE4B91827549FD1005B617D /* Model.swift in Sources */,
+				D9889885283C3F76005CB9F9 /* GetNameEndpoint.swift in Sources */,
 				8FE4B9202754A0A8005B617D /* EndpointClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
