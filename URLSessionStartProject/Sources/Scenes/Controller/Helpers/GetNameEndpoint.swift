@@ -25,13 +25,6 @@ final class GetNameEndpoint: ObjectResponseEndpoint<Cards> {
     }
     
     private func makeCardNamesParameter() -> String {
-        var parameterName = ""
-        
-        for card in cardNames {
-            parameterName += "\(card)|"
-        }
-        
-        parameterName.removeLast()
-        return parameterName
+        return cardNames.joined(separator: "|")
     }
 }
