@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import FileProvider
 
 struct Card: Decodable {
     let name: String?
