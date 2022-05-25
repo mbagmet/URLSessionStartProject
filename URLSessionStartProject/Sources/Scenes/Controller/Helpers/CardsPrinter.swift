@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CardsPrinter {
+struct CardsPrinter {
     func printCard(cards: [Card]) {
         for card in cards {
             self.printOptional(title: "Название", item: card.name)
