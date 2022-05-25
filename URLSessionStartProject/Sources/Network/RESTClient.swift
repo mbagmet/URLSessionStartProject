@@ -52,10 +52,7 @@ public final class RESTClient {
                 }
             }
         }
-        
-        
-        
-        
+
         self.resumeDataTask(with: request, session: session, completionHandler: completionHandler)
     }
     

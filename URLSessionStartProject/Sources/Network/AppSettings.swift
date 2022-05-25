@@ -63,5 +63,4 @@ public final class ApplicationSettingsService {
     // MARK: - Initialization
     
     // MARK: - Public
-  
 }
