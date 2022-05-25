@@ -20,6 +20,7 @@
 		8FE4B9202754A0A8005B617D /* EndpointClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B91F2754A0A8005B617D /* EndpointClient.swift */; };
 		8FE4B9222754A0EF005B617D /* EndpointClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B9212754A0EF005B617D /* EndpointClientError.swift */; };
 		8FE4B9242754A118005B617D /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B9232754A118005B617D /* ServerError.swift */; };
+		D95AF690283D4944006B175F /* CardsPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AF68F283D4944006B175F /* CardsPrinter.swift */; };
 		D9889880283C2ED7005CB9F9 /* String+ExtensionMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D988987F283C2ED7005CB9F9 /* String+ExtensionMD5.swift */; };
 		D9889883283C3852005CB9F9 /* Date+ExtensionTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889882283C3852005CB9F9 /* Date+ExtensionTimestamp.swift */; };
 		D9889885283C3F76005CB9F9 /* GetNameEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889884283C3F76005CB9F9 /* GetNameEndpoint.swift */; };
@@ -42,6 +43,7 @@
 		8FE4B91F2754A0A8005B617D /* EndpointClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointClient.swift; sourceTree = "<group>"; };
 		8FE4B9212754A0EF005B617D /* EndpointClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointClientError.swift; sourceTree = "<group>"; };
 		8FE4B9232754A118005B617D /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		D95AF68F283D4944006B175F /* CardsPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPrinter.swift; sourceTree = "<group>"; };
 		D988987F283C2ED7005CB9F9 /* String+ExtensionMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionMD5.swift"; sourceTree = "<group>"; };
 		D9889882283C3852005CB9F9 /* Date+ExtensionTimestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionTimestamp.swift"; sourceTree = "<group>"; };
 		D9889884283C3F76005CB9F9 /* GetNameEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNameEndpoint.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				D9889884283C3F76005CB9F9 /* GetNameEndpoint.swift */,
 				D9889887283C3FAD005CB9F9 /* decodeJSONOld.swift */,
+				D95AF68F283D4944006B175F /* CardsPrinter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				8FE4B9242754A118005B617D /* ServerError.swift in Sources */,
 				8FE4B91A2754A009005B617D /* AppSettings.swift in Sources */,
 				8FE4B91C2754A059005B617D /* Endpoint.swift in Sources */,
+				D95AF690283D4944006B175F /* CardsPrinter.swift in Sources */,
 				8FE4B91827549FD1005B617D /* Model.swift in Sources */,
 				D9889885283C3F76005CB9F9 /* GetNameEndpoint.swift in Sources */,
 				8FE4B9202754A0A8005B617D /* EndpointClient.swift in Sources */,
